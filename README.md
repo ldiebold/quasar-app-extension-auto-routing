@@ -41,7 +41,16 @@ const routes = [
 export default routes
 ```
 
-That's it!
+# Linting
+You may want to ignore linting on the auto-generated routes!
+Add the following at the bottom of your `.eslintrc` file:
+```
+/src/router/auto-routing
+```
+
+That's it! Start adding pages to your `src/pages` directory and the routing will be automagically done for you!
+
+Also take a look at `src/layouts/default.vue` to change the default used layout.
 
 # Find out more
 Want to know how it all works? Take a look at [vue-route-generator](https://github.com/ktsn/vue-route-generator), which is what this App Extension is built on!
