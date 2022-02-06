@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-auto-routing",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "\"Nuxt-like\" routing in Quasar projects",
   "author": "luke@quasarcast.com",
   "license": "MIT",
