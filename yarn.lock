@@ -185,3 +185,8 @@ vue-route-generator@^1.0.0:
   dependencies:
     fast-glob "^3.2.4"
     prettier "2.2.1"
+
+vue-router-layout@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/vue-router-layout/-/vue-router-layout-0.4.1.tgz#d26756a5a953c532f2f234c23e069be4bddec76e"
+  integrity sha512-Reu9FvrItx5J+GJVJOBtL2q70AYfWeQpu0V/1N/4G/Jrnb2N2wYDRwSkoj177o3bwKjuNLcYfBsux8jYhUGI5w==

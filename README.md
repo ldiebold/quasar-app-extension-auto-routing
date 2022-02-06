@@ -15,20 +15,36 @@ quasar ext add auto-routing
 ```
 Quasar CLI will retrieve it from the NPM registry and install the extension to your project.
 
-## Prompts
+Lastly, dive into `src/router/routes.js` and use the generated routes:
 
-> Explain the prompts here
+```js
+import generatedRoutes from './auto-routing' // 🤿 Here
 
-# Uninstall
-```bash
-quasar ext remove auto-routing
+const routes = [
+  ...generatedRoutes, // 🤿 And here
+  {
+    path: '/',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Index.vue') }
+    ]
+  },
+
+  // Always leave this as last one,
+  // but you can also remove it
+  {
+    path: '/:catchAll(.*)*',
+    component: () => import('pages/Error404.vue')
+  }
+]
+
+export default routes
 ```
 
-# Info
-> Add longer information here that will help the user of your app extension.
+That's it!
 
-# Other Info
-> Add other information that's not as important to know
+# Find out more
+Want to know how it all works? Take a look at [vue-route-generator](https://github.com/ktsn/vue-route-generator), which is what this App Extension is built on!
 
 # Donate
 If you appreciate the work that went into this App Extension, please consider [donating to Quasar](https://donate.quasar.dev).
