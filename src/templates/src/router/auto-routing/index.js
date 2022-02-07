@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createRouterLayout } from 'vue-router-layout'
 import generatedRoutes from './generated-routes'
 

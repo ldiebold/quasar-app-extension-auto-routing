@@ -18,7 +18,8 @@ export default [
     component: RouterLayout,
     children: generatedRoutes
   }
-]`
+]
+`
 
 const compile = template(indexTemplate)
 
@@ -31,7 +32,8 @@ const compile = template(indexTemplate)
  */
 module.exports = function createIndexTemplate(routePrefix, layoutsDir, outFile) {
   // Fill the template
-  const code = compile({ routePrefix, layoutsDir, outFile })
+  let code = compile({ routePrefix, layoutsDir, outFile })
+  code = '/* eslint-disable */\n' + code
   
   /**
    * The following ensures the destination exists

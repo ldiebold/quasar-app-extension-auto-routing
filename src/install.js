@@ -6,7 +6,7 @@ module.exports = function (api) {
   api.render('templates')
 
   /**
-   * Almost all users will likely want that same setup for
+   * Almost all users will likely want the same setup for
    * auto-routing, so we simply setup the
    * defaults without prompting.
    */
@@ -16,7 +16,7 @@ module.exports = function (api) {
       routePrefix: '',
       layoutsDir: 'src/layouts',
       ignorePattern: "/(^|[\/\\])\../",
-      outFile: 'src/router/auto-routing/generated-routes.js',
+      outDir: 'src/router/auto-routing',
       pagesImportPrefix: 'pages/',
       generatorConfig: {}
     }
