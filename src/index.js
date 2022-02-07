@@ -3,7 +3,6 @@ const path = require('path')
 const fs = require('fs')
 const chokidar = require('chokidar')
 const createIndexTemplate = require('./createIndexTemplate')
-const prependFile = require('prepend-file');
 
 module.exports = function (api) {
   const pagesDir = api.resolve.app(api.prompts.pagesDir)

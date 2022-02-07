@@ -18,7 +18,9 @@ module.exports = function (api) {
       ignorePattern: "/(^|[\/\\])\../",
       outDir: 'src/router/auto-routing',
       pagesImportPrefix: 'pages/',
-      generatorConfig: {}
+      generatorConfig: {
+        'nested': true
+      }
     }
   })
 }
