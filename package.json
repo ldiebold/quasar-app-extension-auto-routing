@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-auto-routing",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "\"Nuxt-like\" routing in Quasar projects",
   "author": "luke@quasarcast.com",
   "license": "MIT",
@@ -22,6 +22,7 @@
   "dependencies": {
     "chokidar": "^3.5.3",
     "lodash.template": "^4.5.0",
+    "prepend-file": "^2.0.1",
     "vue-route-generator": "^1.0.0",
     "vue-router-layout": "^0.4.1"
   }
