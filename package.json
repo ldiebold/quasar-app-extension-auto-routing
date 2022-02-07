@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "chokidar": "^3.5.3",
+    "lodash.template": "^4.5.0",
     "vue-route-generator": "^1.0.0",
     "vue-router-layout": "^0.4.1"
   }
