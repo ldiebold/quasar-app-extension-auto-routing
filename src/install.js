@@ -15,7 +15,7 @@ module.exports = function (api) {
       pagesDir: 'src/pages',
       routePrefix: '',
       layoutsDir: 'src/layouts',
-      ignorePattern: /(^|[\/\\])\../,
+      ignorePattern: "/(^|[\/\\])\../",
       outFile: 'src/router/auto-routing/generated-routes.js',
       pagesImportPrefix: 'pages/',
       generatorConfig: {}
