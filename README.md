@@ -37,7 +37,7 @@ export default routes
 
 # Linting
 You may want to ignore linting on the auto-generated routes!
-Add the following at the bottom of your `.eslintrc` file:
+Add the following at the bottom of your `.eslintignore` file:
 ```
 /src/router/auto-routing
 ```
